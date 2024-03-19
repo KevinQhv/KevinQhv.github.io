@@ -24,9 +24,7 @@ summary: "Hi, I'm Kévin, a French Embedded System Security  PhD student, and he
 
 ---
 
-Hello and welcome to my blog! My name is Adam and I'm a French Hardware Cybersecurity student. I have a great passion for exploring the world of hardware security and cybersecurity in general, I love diving into the intricate details of various systems and devices. As an reverse engineer enthusiast, I enjoy unravelling the intricacies of various software and hardware components, which has led me to game hacking, CTFs, Windows internals, and hardware such as FPGAs.
-
-Through this blog, I hope to share my ideas and experiences in the field of hardware security and provide readers with valuable knowledge on the various topics I cover. Whether you are an enthusiast or simply curious about the world of cybersecurity, I invite you to join me on this journey of exploration and discovery. Thank you for visiting my blog and I hope you enjoy the content !
+Hello and welcome to my blog! My name is Kevin and I'm a French PhD student in hardware cybersecurity. I have a deep passion for exploring the world of hardware security and cybersecurity in general. I love diving into the intricate details of various systems and devices.
 
 <h1 class="mt-0 text-4xl font-bold text-neutral-900 dark:text-neutral">Resume</h1>
 
@@ -34,12 +32,14 @@ Through this blog, I hope to share my ideas and experiences in the field of hard
 
 {{< timelineItem icon="graduation-cap" header="Master CSSE" subheader="University UBS, Lorient, France" >}}
 <b>2022 / 2024</b><br><br>
-The master degree is where I learned the most, the courses are about hardware security as well as software security. I could learn hardware description in VHDL, exploit development and reverse engineering. Moreover, a part of the courses is dedicated to the creation of Linux distributions and their security. This master is really complete and really allowed me to develop my skills. <br>
+During my master's degree, I gained extensive knowledge in both hardware and software security. The courses covered topics such as hardware description in VHDL, exploit development, and reverse engineering. Additionally, I learned about the creation and security of Linux distributions. The program was comprehensive and helped me develop my skills. <br>
 <h3>Skills</h3>
 <ul>
-  <li>VHDL (FPGA in general)</li>
+  <li>Cryptographic algorithms</li>
+  <li>VHDL (FPGA)</li>
+
   <li>STM32 Development</li>
-  <li>C / C++</li>
+  <li>C</li>
   <li>Exploit Development</li>
   <li>Reverse Engineering</li>
   <li>Linux Distribution</li>
