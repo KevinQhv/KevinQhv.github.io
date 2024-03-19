@@ -16,7 +16,7 @@
  weight = 10
 
 [[main]]
- pre = "github"
+#  pre = "github"
  name = "About"
  pageRef = "about"
  weight = 20

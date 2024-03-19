@@ -30,6 +30,20 @@ Hello and welcome to my blog! My name is Kevin and I'm a French PhD student in h
 
 {{< timeline >}}
 
+{{< timelineItem icon="graduation-cap" header="PhD student in security architecture" subheader="University UBS, Lorient, France" >}}
+<b>2021 / 2023</b><br><br>
+<!-- During my master's degree, I gained extensive knowledge in both hardware and software security. The courses covered topics such as hardware description in VHDL, exploit development, and reverse engineering. Additionally, I learned about the creation and security of Linux distributions. The program was comprehensive and helped me develop my skills. <br> -->
+<h3>Skills</h3>
+<ul>
+  <li>System Verilog</li>
+  <li>FPGA</li>
+  <li>C</li>
+  <li>RISC-V</li>
+  <li>Linux Distribution</li>
+  <li>RTOS</li>
+</ul>
+{{< /timelineItem >}}
+
 {{< timelineItem icon="graduation-cap" header="Master Cyber Security Embedded Systems (CSSE)" subheader="University UBS, Lorient, France" >}}
 <b>2021 / 2023</b><br><br>
 During my master's degree, I gained extensive knowledge in both hardware and software security. The courses covered topics such as hardware description in VHDL, exploit development, and reverse engineering. Additionally, I learned about the creation and security of Linux distributions. The program was comprehensive and helped me develop my skills. <br>
