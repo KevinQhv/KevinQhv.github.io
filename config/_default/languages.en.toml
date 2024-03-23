@@ -3,7 +3,7 @@
   languageName = "English"
   weight = 1
   title = "Kévin Quénéhervé"
-  # logo = "img/author.jpeg"
+  logo = "img/author.jpeg"
   description = "Hi, I'm Kévin, a French Embedded System Security PhD student, and here is my blog"
   copyright = "© 2024 Kévin Quénéhervé"
 
