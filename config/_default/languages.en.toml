@@ -17,7 +17,7 @@ title = "Kévin Quénéhervé"
   name = "Kévin Quénéhervé"
   # image = "img/blowfish_logo_transparent.png"
   image = "img/photo.jpeg"
-  headline = "I'm only Breton"
+  headline = "I'm only Breton ![Gwenn ha Du](img/Gwenn_ha_Du.svg)"
   bio = "Hi, I'm Kévin, a French Embedded System Security PhD student."
   # , and here is my blog where I write content about : Reverse Engineering, Game Hacking, Hardware, Windows Internal..."
 
