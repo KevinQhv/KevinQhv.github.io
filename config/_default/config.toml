@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://kevinqhv.github.io/"
+# baseURL = "https://kevinqhv.github.io/"
 defaultContentLanguage = "en"
 
 [params]

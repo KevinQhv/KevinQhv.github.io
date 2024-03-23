@@ -28,7 +28,7 @@ defaultBackgroundImage = "img/free-photo-of-nature-montagne-italie-nature-sauvag
 # smartTOCHideUnfocusedChildren = true
 
 [header]
-  layout = "basic" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
 [footer]
   showMenu = true
@@ -39,15 +39,26 @@ defaultBackgroundImage = "img/free-photo-of-nature-montagne-italie-nature-sauvag
 
 
 [homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
+  layout = "background" # valid options: page, profile, hero, card, background, custom
   #homepageImage = "IMAGE.jpg" # used in: hero, and card
-  showRecent = false
-  showRecentItems = 5
-  showMoreLink = false
+  showRecent = true
+  showRecentItems = 4
+  showMoreLink = true
   showMoreLinkDest = "/posts"
   cardView = false
   cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
+  layoutBackgroundBlur = true # only used when layout equals background
+
+# [homepage]
+#   layout = "profile" # valid options: page, profile, hero, card, background, custom
+#   #homepageImage = "IMAGE.jpg" # used in: hero, and card
+#   showRecent = false
+#   showRecentItems = 5
+#   showMoreLink = false
+#   showMoreLinkDest = "/posts"
+#   cardView = false
+#   cardViewScreenWidth = false
+#   layoutBackgroundBlur = false # only used when layout equals background
 
 [article]
   showDate = true

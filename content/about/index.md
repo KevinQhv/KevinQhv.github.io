@@ -25,7 +25,18 @@ summary: "Hi, I'm Kévin, a French Embedded System Security PhD student, and her
 
 Hello and welcome to my blog! My name is Kevin and I'm a French PhD student in hardware cybersecurity. I have a deep passion for exploring the world of hardware security and cybersecurity in general. I love diving into the intricate details of various systems and devices.
 
-## Timeline
+## Experience 👨‍💻
+
+- **Événement 1**
+  - Date: 2021-01-01
+  - Description: Description de l'événement 1.
+
+- **Événement 2**
+  - Date: 2021-03-15
+  - Description: Description de l'événement 2.
+
+
+## Education 🧑‍🎓
 
 - **Événement 1**
   - Date: 2021-01-01
