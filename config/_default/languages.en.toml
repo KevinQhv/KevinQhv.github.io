@@ -15,13 +15,14 @@ title = "Kévin Quénéhervé"
 
 [author]
   name = "Kévin Quénéhervé"
-  image = "img/blowfish_logo_transparent.png"
-  headline = "I'm only human"
-  bio = "Hi, I'm Kévin, a French Embedded System Security student"
+  # image = "img/blowfish_logo_transparent.png"
+  image = "img/photo.jpeg"
+  headline = "I'm only Breton"
+  bio = "Hi, I'm Kévin, a French Embedded System Security PhD student."
   # , and here is my blog where I write content about : Reverse Engineering, Game Hacking, Hardware, Windows Internal..."
 
   links = [
-    { email = "mailto:hello@your_domain.com" },
+    { email = "mailto:kevin.queneherve@univ-ubs.fr" },
     # { link = "https://link-to-some-website.com/" },
     # { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
     # { apple = "https://www.apple.com" },
@@ -29,7 +30,7 @@ title = "Kévin Quénéhervé"
     # { bluesky = "https://bsky.app/profile/username" },
     # { codepen = "https://codepen.io/username" },
     # { dev = "https://dev.to/username" },
-    { discord = "https://discord.gg/invitecode" },
+    # { discord = "https://discord.gg/invitecode" },
     # { dribbble = "https://dribbble.com/username" },
     # { facebook = "https://facebook.com/username" },
     # { flickr = "https://www.flickr.com/photos/username/" },
