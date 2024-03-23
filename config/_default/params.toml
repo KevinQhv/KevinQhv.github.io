@@ -18,6 +18,8 @@ enableCodeCopy = false
 disableImageOptimization = false
 disableTextInHeader = false
 
+defaultBackgroundImage = "img/free-photo-of-nature-montagne-italie-nature-sauvage.jpeg" # used as default for background images 
+
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images 
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
 
