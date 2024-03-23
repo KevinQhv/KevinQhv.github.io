@@ -2,6 +2,10 @@ languageCode = "en"
 languageName = "English"
 weight = 1
 title = "Kévin Quénéhervé"
+logo = "img/author.jpeg"
+description = "Hi, I'm Kévin, a French Embedded System Security PhD student, and here is my blog"
+copyright = "© 2024 Kévin Quénéhervé"
+dateFormat = "2 January 2006"
 
 [params]
   displayName = "EN"
@@ -15,12 +19,9 @@ title = "Kévin Quénéhervé"
 
 [author]
   name = "Kévin Quénéhervé"
-  # image = "img/blowfish_logo_transparent.png"
-  image = "img/photo.jpeg"
-  headline = "I'm only Breton ![Gwenn ha Du](img/Gwenn_ha_Du.svg)"
+  image = "img/author.jpeg"
+  headline = "I'm only Breton"
   bio = "Hi, I'm Kévin, a French Embedded System Security PhD student."
-  # , and here is my blog where I write content about : Reverse Engineering, Game Hacking, Hardware, Windows Internal..."
-
   links = [
     { email = "mailto:kevin.queneherve@univ-ubs.fr" },
     # { link = "https://link-to-some-website.com/" },

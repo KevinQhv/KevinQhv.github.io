@@ -1,6 +1,6 @@
 ---
 title: "About"
-#date: 2023-04-23T16:21:46+02:00
+date: 2024-03-23T16:21:46+02:00
 draft: false
 
 showDate : false
@@ -20,7 +20,6 @@ showAuthor: true
 layoutBackgroundHeaderSpace: false
 
 summary: "Hi, I'm Kévin, a French Embedded System Security PhD student, and here is my blog"
-#  where I write content about : Reverse Engineering, Game Hacking, Hardware, Windows Internal..."
 
 ---
 
