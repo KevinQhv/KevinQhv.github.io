@@ -21,13 +21,16 @@ buildFuture = false
 
 # googleAnalytics = "G-XXXXXXXXX"
 
+[permalinks]
+  posts = "/:title"
+
 [imaging]
   anchor = 'Center'
 
 [taxonomies]
   tag = "tags"
-  category = "categories"
-  author = "authors"
+  # category = "categories"
+  # author = "authors"
   series = "series"
 
 [sitemap]

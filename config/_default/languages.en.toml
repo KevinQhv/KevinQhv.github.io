@@ -1,11 +1,13 @@
-[languages.en.params]
-  languageCode = "en"
-  languageName = "English"
-  weight = 1
-  title = "Kévin Quénéhervé"
-  logo = "img/author.jpeg"
-  description = "Hi, I'm Kévin, a French Embedded System Security PhD student, and here is my blog"
-  copyright = "© 2024 Kévin Quénéhervé"
+
+# [languages.en.params]
+# [languages]
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Kévin Quénéhervé"
+# logo = "img/author.jpeg"
+description = "Hi, I'm Kévin, a French Embedded System Security PhD student, and here is my blog"
+copyright = "© 2024 Kévin Quénéhervé"
 
 
 [params]
@@ -21,7 +23,7 @@
 [author]
   name = "Kévin Quénéhervé"
   image = "img/author.jpeg"
-  headline = "I'm only Breton"
+  headline = "I'm Human"
   bio = "Hi, I'm Kévin, a French Embedded System Security PhD student 🇲🇫"
   links = [
     { email = "mailto:kevin.queneherve@univ-ubs.fr" },

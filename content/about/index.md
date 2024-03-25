@@ -27,8 +27,6 @@ Hello and welcome to my blog! My name is Kevin and I'm a French PhD student in h
 
 ----
 
-----
-
 ## Experience 👨‍💻
 
 - **PhD Security Architecture numerique**
