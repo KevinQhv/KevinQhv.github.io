@@ -6,7 +6,7 @@ languageName = "English"
 weight = 1
 title = "Kévin Quénéhervé"
 # logo = "img/author.jpeg"
-description = "Hi, I'm Kévin, a French Embedded System Security PhD student, and here is my blog"
+description = "Hi, I'm Kévin, a PhD student in Embedded Systems Security, and here is my blog"
 copyright = "© 2024 Kévin Quénéhervé"
 
 
@@ -23,8 +23,8 @@ copyright = "© 2024 Kévin Quénéhervé"
 [author]
   name = "Kévin Quénéhervé"
   image = "img/author.jpeg"
-  headline = "I'm Human"
-  bio = "Hi, I'm Kévin, a French Embedded System Security PhD student 🇲🇫"
+  headline = " PhD student in Embedded System Security"
+  bio = "Hi, I'm Kévin, a PhD student in Embedded System Security 🇲🇫"
   links = [
     { email = "mailto:kevin.queneherve@univ-ubs.fr" },
     # { link = "https://link-to-some-website.com/" },
