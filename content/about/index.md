@@ -34,14 +34,7 @@ Hello and welcome to my blog! My name is Kevin and I'm a French PhD student in E
 {{< timelineItem icon="code" header="PhD Student in Secure Processor Architecture" subheader="Lab-STICC, Lorient, France" >}}
 <b>2023 - 2026 </b><br><br>
 
-There 3 years, I learned about the cybersecurity of embedded systems, more specificaly in the processor
-
-digital technology and how it's used in industry. I explored things like electronics, computing, and how signals are processed for communication systems like IoT. I also studied the basic principles of computer systems, like how they're built and how they operate. <br>
-
-These 2 years, I have specialized in the cybersecurity of embedded systems, with an emphasis on securing electronic and computer components. My master's degree covered hardware and software security, exploit development, reverse engineering and Linux distribution security, which considerably enhanced my skills. <br>
-
-
-Study and development of a RISC-V embedded processor tolerant to faults induced by physical attacks <br>
+This thesis project centers on enhancing the security of embedded processors, particularly within the framework of the RISC-V architecture. Its goal is to fortify processor designs against physical attacks by studying and implementing defenses against fault injection attacks targeting data and control flows. The approach combines hardware extensions tailored to the RISC-V processor and instruction set with software-based protection mechanisms to bolster overall security. <br>
 
 <h3>Skills</h3>
 <ul>
