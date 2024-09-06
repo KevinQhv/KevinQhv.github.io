@@ -6,7 +6,7 @@ draft: false
 summary: "This section presents the different presentations of my work"
 ---
 
-## Internationale Conference
+## International Conference
 
 * **DSD 2024** - [*Exploring Fault Injection Attacks on CVA6 PMP Configuration Flow*](https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=EyydMi4AAAAJ&citation_for_view=EyydMi4AAAAJ:u5HHmVD_uO8C)
 
