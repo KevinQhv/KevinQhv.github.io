@@ -1,0 +1,37 @@
+# Research & open-source projects shown on the home page.
+- title: Clock-glitch campaign on CVA6 Physical Memory Protection
+  year: "2024–2025"
+  image: img/poster-riscv-summit-2025.jpg
+  image_alt: Poster "CVA6 RISC-V PMP Vulnerabilities against FIA" presented at RISC-V Summit Europe 2025
+  summary: >-
+    More than 830,000 clock-glitch injections on a 64-bit CVA6 core running on an
+    Arty A7-100T FPGA, each one logged with its glitch width, offset and the resulting
+    corruption of the PMP registers. The full dataset, the poster and its LaTeX sources
+    are open, and the work was featured on the RISC-V International blog.
+  tags: [CVA6, ChipWhisperer, LiteX, FPGA, Python]
+  links:
+    - { label: "Repository", url: "https://github.com/KevinQhv/RISC-V-SummitEurope2025-cva6-pmp-fia-vuln" }
+    - { label: "RISC-V blog", url: "https://riscv.org/blog/2025/08/cva6-risc-v-pmp-vulnerabilities-against-fia/" }
+
+- title: Clock Fault Injector
+  year: "2024"
+  summary: >-
+    The Python tool behind my experiments. It drives a ChipWhisperer to inject clock
+    glitches into an SoC on an FPGA board, sweeps glitch width and offset, reflashes the
+    bitstream when the target crashes, can resume a long campaign, and writes every
+    result to CSV for analysis.
+  tags: [Python, ChipWhisperer, openFPGALoader]
+  links:
+    - { label: "Repository", url: "https://github.com/KevinQhv/ClockFaultInjector" }
+
+- title: Hamming-code fault filters in the CVA6 decode stage
+  year: "2024"
+  summary: >-
+    Hardware modules added to the instruction-decode stage of CVA6 that use a Hamming
+    error-correcting code to detect and filter faults. They showed that many PMP
+    corruptions observed under clock glitching come from single bit-flips in that stage
+    (DSD 2024).
+  tags: [SystemVerilog, CVA6, ECC]
+  links:
+    - { label: "Paper", url: "https://doi.org/10.1109/DSD64264.2024.00015" }
+

@@ -1,0 +1,54 @@
+name: Kévin Quénéhervé
+role: PhD candidate in hardware security
+affiliation: Lab-STICC, Université Bretagne Sud — Lorient, France
+statement: >-
+  I study how fault injection attacks disturb RISC-V processors, and I design
+  hardware and software defences that keep them running correctly when it happens.
+email: kevin.queneherve@univ-ubs.fr
+
+links:
+  - name: Email
+    url: mailto:kevin.queneherve@univ-ubs.fr
+    icon: mail
+  - name: GitHub
+    url: https://github.com/KevinQhv
+    icon: github
+  - name: Google Scholar
+    url: https://scholar.google.com/citations?user=EyydMi4AAAAJ
+    icon: scholar
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/k%C3%A9vin-queneherve/
+    icon: linkedin
+  # Add your ORCID or HAL author page once you have them:
+  # - name: ORCID
+  #   url: https://orcid.org/0000-0000-0000-0000
+  #   icon: orcid
+
+thesis:
+  title: Design of a RISC-V embedded processor tolerant to faults induced by physical attacks
+  title_fr: Étude et développement d'un processeur embarqué RISC-V tolérant aux fautes induites par des attaques physiques
+  started: September 2023
+  school: Doctoral school MathSTIC, Université Bretagne Sud
+  url: https://theses.fr/s369423
+  supervisors:
+    - name: Vianney Lapôtre
+      affiliation: Université Bretagne Sud, Lab-STICC
+    - name: Philippe Tanguy
+      affiliation: Université Bretagne Sud, Lab-STICC
+    - name: Rachid Dafali
+      affiliation: DGA Maîtrise de l'information
+  summary: >-
+    Physical attacks such as clock glitches, voltage glitches and electromagnetic
+    pulses can flip bits inside a processor and silently break its security
+    mechanisms. My thesis first characterises these faults on real hardware — an
+    open-source CVA6 RISC-V core running on an FPGA — and then builds countermeasures
+    that combine dedicated hardware extensions of the core and its instruction set
+    with software-level protections, so that both data flow and control flow stay
+    trustworthy under attack.
+
+interests:
+  - Fault injection attacks (clock & voltage glitching)
+  - RISC-V microarchitecture (CVA6)
+  - Physical Memory Protection (PMP)
+  - Hardware countermeasures & error-detecting codes
+  - FPGA prototyping with LiteX

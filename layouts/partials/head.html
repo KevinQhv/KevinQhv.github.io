@@ -1,0 +1,52 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{ $title := cond .IsHome site.Title (printf "%s — %s" .Title site.Title) }}
+{{ $desc := .Description | default site.Params.description }}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}">
+<meta name="author" content="{{ site.Params.author }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* Open Graph / social previews */}}
+{{ $img := resources.Get site.Params.image }}
+{{ $og := $img.Fill "600x600 Center q85" }}
+<meta property="og:type" content="{{ cond .IsHome "website" "profile" }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $og.Permalink }}">
+<meta name="twitter:card" content="summary">
+
+{{/* Structured data so search engines know who this page is about */}}
+{{ $p := site.Data.profile }}
+<script type="application/ld+json">
+{{ dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" $p.name
+  "jobTitle" $p.role
+  "affiliation" (dict "@type" "Organization" "name" "Lab-STICC, Université Bretagne Sud")
+  "email" (printf "mailto:%s" $p.email)
+  "image" $og.Permalink
+  "url" site.BaseURL
+  "sameAs" (slice "https://github.com/KevinQhv" "https://scholar.google.com/citations?user=EyydMi4AAAAJ" "https://www.linkedin.com/in/k%C3%A9vin-queneherve/")
+  | jsonify | safeJS }}
+</script>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#F4F6F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1424" media="(prefers-color-scheme: dark)">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap">
+
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{/* Apply the saved theme before first paint to avoid a flash */}}
+<script>
+  try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>

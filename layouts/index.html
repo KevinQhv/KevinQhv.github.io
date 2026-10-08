@@ -1,0 +1,106 @@
+{{ define "main" }}
+{{ $p := site.Data.profile }}
+{{ $img := resources.Get "img/author.jpeg" }}
+{{ $photo := $img.Fill "320x320 Center q82" }}
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1 class="hero-name">Kévin<br>Quénéhervé</h1>
+      <p class="hero-role">{{ $p.role }}<br><span>{{ $p.affiliation }}</span></p>
+      <p class="hero-statement">{{ $p.statement }}</p>
+      <ul class="hero-links">
+        {{ range $p.links }}
+        <li><a href="{{ .url }}">{{ partial "icon.html" .icon }}<span>{{ .name }}</span></a></li>
+        {{ end }}
+      </ul>
+    </div>
+    <img class="hero-photo" src="{{ $photo.RelPermalink }}" width="160" height="160" alt="Portrait of Kévin Quénéhervé">
+  </div>
+  {{ partial "waveform.html" . }}
+</section>
+
+<section id="research" class="section">
+  <div class="wrap">
+    <h2>Research</h2>
+    <div class="research-grid">
+      <div class="prose">
+        <p class="lead">{{ $p.thesis.summary }}</p>
+        <p class="thesis-ref">
+          PhD thesis, started {{ $p.thesis.started }}:
+          <a href="{{ $p.thesis.url }}"><cite lang="fr">{{ $p.thesis.title_fr }}</cite></a>
+        </p>
+      </div>
+      <aside class="research-side">
+        <h3>Supervisors</h3>
+        <ul class="plain">
+          {{ range $p.thesis.supervisors }}<li>{{ .name }}<span>{{ .affiliation }}</span></li>{{ end }}
+        </ul>
+        <h3>Topics</h3>
+        <ul class="plain topics">
+          {{ range $p.interests }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="publications" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Selected publications</h2>
+      <a class="more" href="/publications/">All {{ len site.Data.publications }} publications</a>
+    </div>
+    <div class="pub-list">
+      {{ range where site.Data.publications "featured" true }}
+        {{ partial "pub-item.html" (dict "p" . "full" false) }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="wrap">
+    <h2>Projects</h2>
+    {{ range $i, $pr := site.Data.projects }}
+      {{ if eq $i 0 }}
+      <article class="project project-lead">
+        {{ with $pr.image }}
+          {{ $im := resources.Get . }}
+          {{ $sm := $im.Resize "560x q80" }}
+          <a class="project-figure" href="{{ (index $pr.links 0).url }}">
+            <img src="{{ $sm.RelPermalink }}" width="{{ $sm.Width }}" height="{{ $sm.Height }}" alt="{{ $pr.image_alt }}" loading="lazy">
+          </a>
+        {{ end }}
+        <div>
+          <p class="project-year">{{ $pr.year }}</p>
+          <h3>{{ $pr.title }}</h3>
+          <p>{{ $pr.summary }}</p>
+          <ul class="tags">{{ range $pr.tags }}<li>{{ . }}</li>{{ end }}</ul>
+          <ul class="pub-links">{{ range $pr.links }}<li><a href="{{ .url }}">{{ .label }}</a></li>{{ end }}</ul>
+        </div>
+      </article>
+      {{ else }}
+      <article class="project">
+        <p class="project-year">{{ $pr.year }}</p>
+        <div>
+          <h3>{{ $pr.title }}</h3>
+          <p>{{ $pr.summary }}</p>
+          <ul class="tags">{{ range $pr.tags }}<li>{{ . }}</li>{{ end }}</ul>
+          <ul class="pub-links">{{ range $pr.links }}<li><a href="{{ .url }}">{{ .label }}</a></li>{{ end }}</ul>
+        </div>
+      </article>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p class="lead">For research collaborations, talks or questions about my work, email me at
+      <a href="mailto:{{ $p.email }}">{{ $p.email }}</a>.</p>
+    <p><a class="button" href="/about/">Read my CV</a></p>
+  </div>
+</section>
+{{ end }}

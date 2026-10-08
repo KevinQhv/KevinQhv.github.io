@@ -1,0 +1,41 @@
+baseURL = "https://kevinqhv.github.io/"
+languageCode = "en"
+title = "Kévin Quénéhervé"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  description = "Kévin Quénéhervé — PhD candidate in hardware security at Lab-STICC (Université Bretagne Sud). Fault injection attacks and countermeasures for RISC-V processors."
+  author = "Kévin Quénéhervé"
+  image = "img/author.jpeg"
+  # Shown in the footer and used for the "Edit on GitHub" link
+  repo = "https://github.com/KevinQhv/KevinQhv.github.io"
+
+[menus]
+  [[menus.main]]
+    name = "Research"
+    url = "/#research"
+    weight = 10
+  [[menus.main]]
+    name = "Publications"
+    pageRef = "/publications"
+    weight = 20
+  [[menus.main]]
+    name = "Projects"
+    url = "/#projects"
+    weight = 30
+  [[menus.main]]
+    name = "CV"
+    pageRef = "/about"
+    weight = 40
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[sitemap]
+  changeFreq = "monthly"
+  priority = 0.5
+
+[imaging]
+  quality = 82
+  anchor = "Center"

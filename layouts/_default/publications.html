@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{ $all := site.Data.publications }}
+<section class="page-head">
+  <div class="wrap">
+    <h1>Publications</h1>
+    <p class="lead">Papers and posters on fault injection attacks against RISC-V processors.
+      Abstracts and BibTeX entries open under each item.</p>
+  </div>
+</section>
+
+{{ $groups := slice
+  (dict "kind" "journal" "title" "Journal articles")
+  (dict "kind" "paper" "title" "Conference papers")
+  (dict "kind" "talk" "title" "Talks")
+  (dict "kind" "poster" "title" "Posters")
+}}
+{{ range $groups }}
+  {{ $g := . }}
+  {{ $items := where $all "kind" $g.kind }}
+  {{ with $items }}
+  <section class="section section-tight">
+    <div class="wrap">
+      <h2>{{ $g.title }}</h2>
+      <div class="pub-list">
+        {{ range . }}{{ partial "pub-item.html" (dict "p" . "full" true) }}{{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+{{ end }}

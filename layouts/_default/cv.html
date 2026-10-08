@@ -1,0 +1,49 @@
+{{ define "main" }}
+{{ $cv := site.Data.cv }}
+{{ $p := site.Data.profile }}
+<section class="page-head">
+  <div class="wrap">
+    <h1>Curriculum vitae</h1>
+    <p class="lead">PhD candidate in embedded systems security at Lab-STICC, Université Bretagne Sud.
+      I work on fault injection attacks and countermeasures for RISC-V processors.</p>
+    <ul class="hero-links">
+      {{ range $p.links }}
+      <li><a href="{{ .url }}">{{ partial "icon.html" .icon }}<span>{{ .name }}</span></a></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+{{ $sections := slice
+  (dict "title" "Research experience" "items" $cv.experience)
+  (dict "title" "Education" "items" $cv.education)
+  (dict "title" "Course projects" "items" $cv.coursework)
+}}
+{{ range $sections }}
+<section class="section section-tight">
+  <div class="wrap">
+    <h2>{{ .title }}</h2>
+    <ol class="timeline">
+      {{ range .items }}
+      <li>
+        <p class="tl-period">{{ .period }}</p>
+        <div class="tl-body">
+          <h3>{{ .title }}</h3>
+          {{ with .org }}<p class="tl-org">{{ . }}</p>{{ end }}
+          <p>{{ .text | safeHTML }}</p>
+          {{ with .skills }}<ul class="tags">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+{{ end }}
+
+<section class="section section-tight">
+  <div class="wrap">
+    <h2>Publications</h2>
+    <p>See the <a href="/publications/">full list of papers and posters</a>.</p>
+  </div>
+</section>
+{{ end }}

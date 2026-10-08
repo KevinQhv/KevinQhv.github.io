@@ -1,0 +1,97 @@
+# Publications, newest first within each group.
+# kind: paper | poster | talk
+# Fields: title, authors (list), venue, venue_short, place, date (YYYY-MM), links (list of { label, url }), abstract (optional)
+
+- kind: poster
+  title: "Rejeu d'instructions piloté par le matériel dans le cœur RISC-V CVA6"
+  title_en: Hardware-driven instruction replay in the CVA6 RISC-V core
+  authors: [Telly Raheriniaina, Kévin Quénéhervé, Philippe Tanguy, Rachid Dafali, Vianney Lapôtre]
+  venue: Journée thématique sur les Attaques par Injection de Fautes
+  venue_short: JAIF 2026
+  place: Montpellier, France
+  date: "2026-10"
+  links:
+    - { label: "Programme", url: "https://jaif.io/2026/programme.html" }
+
+- kind: poster
+  title: CVA6 RISC-V PMP Vulnerabilities against FIA
+  authors: [Kévin Quénéhervé, Philippe Tanguy, Rachid Dafali, Vianney Lapôtre]
+  venue: RISC-V Summit Europe
+  venue_short: RISC-V Summit Europe 2025
+  place: Paris, France
+  date: "2025-05"
+  featured: true
+  links:
+    - { label: "Abstract", url: "https://riscv-europe.org/summit/2025/media/proceedings/2025-05-14-RISC-V-Summit-Europe-P1.1.02-QUENEHERVE-abstract.pdf" }
+    - { label: "Poster & data", url: "https://github.com/KevinQhv/RISC-V-SummitEurope2025-cva6-pmp-fia-vuln" }
+    - { label: "RISC-V blog", url: "https://riscv.org/blog/2025/08/cva6-risc-v-pmp-vulnerabilities-against-fia/" }
+    - { label: "Video", url: "https://www.youtube.com/watch?v=cekM6cq4wFQ" }
+  abstract: >-
+    Fault injection attacks (FIA) can compromise an embedded processor by altering its
+    clock signal, power supply or by using electromagnetic pulses. This study analyses
+    the impact of FIA on the Physical Memory Protection (PMP) configuration flow of a
+    CVA6 RISC-V core. Clock-glitch campaigns on an FPGA implementation (Arty A7-100T)
+    show that FIA induce various effects on the PMP configuration registers and that,
+    depending on the injection parameters, specific effects can be reached with a high
+    probability of success for an attacker.
+
+- kind: paper
+  title: Exploring Fault Injection Attacks on CVA6 PMP Configuration Flow
+  authors: [Kévin Quénéhervé, William Pensec, Philippe Tanguy, Rachid Dafali, Vianney Lapôtre]
+  venue: 27th Euromicro Conference on Digital System Design (DSD)
+  venue_short: DSD 2024
+  place: Paris, France
+  date: "2024-08"
+  pages: "43–50"
+  featured: true
+  links:
+    - { label: "PDF", url: "https://hal.science/hal-04683083v1/file/2024_DSD_Exploring_Fault_Injection_Attacks_on_CVA6_PMPConfiguration_Flow.pdf" }
+    - { label: "DOI", url: "https://doi.org/10.1109/DSD64264.2024.00015" }
+    - { label: "HAL", url: "https://hal.science/hal-04683083" }
+  bibtex: |
+    @inproceedings{queneherve2024exploring,
+      title     = {Exploring Fault Injection Attacks on CVA6 PMP Configuration Flow},
+      author    = {Qu{\'e}n{\'e}herv{\'e}, K{\'e}vin and Pensec, William and Tanguy, Philippe and Dafali, Rachid and Lap{\^o}tre, Vianney},
+      booktitle = {27th Euromicro Conference on Digital System Design (DSD)},
+      pages     = {43--50},
+      year      = {2024},
+      address   = {Paris, France},
+      doi       = {10.1109/DSD64264.2024.00015}
+    }
+  abstract: >-
+    Fault Injection Attacks (FIA) pose significant threats to the security and
+    reliability of embedded systems. In this study, we analyse FIA on the Physical
+    Memory Protection (PMP) configuration flow of a CVA6 RISC-V core. Fault injection
+    campaigns relying on clock glitches target an FPGA implementation on an Arty A7-100T
+    board. To further characterise the induced faults, the ID pipeline stage is extended
+    with hardware modules that filter faults using a Hamming error-correction code.
+    Results show that FIA have multiple effects on the PMP configuration registers, that a
+    given effect can be obtained with high probability by an attacker, and that many of
+    the observed effects are caused by single bit-flips in the ID stage of the CVA6 core.
+
+- kind: poster
+  title: Impact of fault injections on the PMP configuration flow within a CVA6 core
+  authors: [Kévin Quénéhervé, Philippe Tanguy, Rachid Dafali, Vianney Lapôtre]
+  venue: Journée thématique sur les Attaques par Injection de Fautes
+  venue_short: JAIF 2024
+  place: Rennes, France
+  date: "2024-10"
+  links:
+    - { label: "HAL", url: "https://hal.science/hal-04729617" }
+    - { label: "Programme", url: "https://jaif.io/2024/programme.html" }
+
+- kind: poster
+  title: Characterizing Clock Glitching Attacks on CVA6 PMP Configuration Flow
+  authors: [Kévin Quénéhervé, William Pensec, Philippe Tanguy, Rachid Dafali, Vianney Lapôtre]
+  venue: CYBERUS Spring School
+  venue_short: CYBERUS 2024
+  place: Lorient, France
+  date: "2024"
+  links:
+    - { label: "HAL", url: "https://hal.science/hal-04729593" }
+  abstract: >-
+    Nashimoto et al. showed that the Physical Memory Protection (PMP) configuration
+    registers of a RISC-V processor can be modified through clock-glitch fault injection,
+    but did not study the consequences of those faults on the registers themselves. This
+    poster investigates the effects of clock glitching on the PMP configuration flow of a
+    CVA6 RISC-V core.

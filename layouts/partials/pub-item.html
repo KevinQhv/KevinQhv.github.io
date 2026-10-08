@@ -1,0 +1,41 @@
+{{/* One publication. Context: dict "p" (entry) "full" (bool: show abstract/bibtex) */}}
+{{ $p := .p }}
+{{ $months := slice "" "Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec" }}
+{{ $year := substr $p.date 0 4 }}
+{{ $when := $year }}
+{{ if gt (len $p.date) 4 }}{{ $when = printf "%s %s" (index $months (int (strings.TrimLeft "0" (substr $p.date 5 2)))) $year }}{{ end }}
+{{ $kinds := dict "paper" "Conference paper" "poster" "Poster" "talk" "Talk" "journal" "Journal article" }}
+<article class="pub" data-kind="{{ $p.kind }}">
+  <p class="pub-venue"><span class="pub-badge">{{ $p.venue_short }}</span><span class="pub-kind">{{ index $kinds $p.kind }}</span></p>
+  <h3 class="pub-title">{{ $p.title }}</h3>
+  {{ with $p.title_en }}<p class="pub-translation">{{ . }}</p>{{ end }}
+  <p class="pub-authors">
+    {{- range $i, $a := $p.authors -}}
+      {{- if $i }}, {{ end -}}
+      {{- if eq $a "Kévin Quénéhervé" }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end -}}
+    {{- end -}}
+  </p>
+  <p class="pub-meta">{{ $p.venue }}, {{ $p.place }}, {{ $when }}{{ with $p.pages }}, pp. {{ . }}{{ end }}</p>
+  {{ with $p.links }}
+  <ul class="pub-links">
+    {{ range . }}<li><a href="{{ .url }}">{{ .label }}</a></li>{{ end }}
+  </ul>
+  {{ end }}
+  {{ if $.full }}
+    {{ with $p.abstract }}
+    <details class="pub-more">
+      <summary>Abstract</summary>
+      <p>{{ . }}</p>
+    </details>
+    {{ end }}
+    {{ with $p.bibtex }}
+    <details class="pub-more">
+      <summary>BibTeX</summary>
+      <div class="bib">
+        <pre><code>{{ . }}</code></pre>
+        <button type="button" class="copy" data-copy>Copy BibTeX</button>
+      </div>
+    </details>
+    {{ end }}
+  {{ end }}
+</article>

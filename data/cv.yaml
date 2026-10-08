@@ -1,0 +1,74 @@
+experience:
+  - title: PhD candidate — secure processor architecture
+    org: Lab-STICC, Université Bretagne Sud
+    place: Lorient, France
+    period: 2023 – present
+    text: >-
+      Making embedded RISC-V processors resilient to physical attacks. I characterise
+      fault injection attacks against data flow and control flow on a CVA6 core
+      prototyped on FPGA, then design countermeasures that combine hardware extensions of
+      the processor and its instruction set with software-level protections. Supervised by
+      Vianney Lapôtre, Philippe Tanguy (UBS) and Rachid Dafali (DGA MI).
+    skills: [FPGA development, CVA6 / RISC-V, Fault injection, ChipWhisperer, C, Assembly, Python, RTOS, Linux]
+
+  - title: Research intern (Master 2)
+    org: Lab-STICC, Université Bretagne Sud
+    place: Lorient, France
+    period: 2023 · 6 months
+    text: >-
+      Reproduced and extended the attack on RISC-V Physical Memory Protection described by
+      <a href="https://tches.iacr.org/index.php/TCHES/article/view/9289">Nashimoto et al.</a>
+      I built a system-on-chip around the CVA6 core on an Arty A7-100T board with the
+      <a href="https://github.com/enjoy-digital/litex">LiteX</a> framework and attacked it
+      with clock glitches.
+    skills: [FPGA development, LiteX, ChipWhisperer, PMP, Python, C, Assembly]
+
+  - title: Research intern (Master 1)
+    org: Lab-STICC, Université Bretagne Sud
+    place: Lorient, France
+    period: 2022 · 3 months
+    text: >-
+      Evaluated how sensitive a RISC-V processor is to physical attacks, using clock
+      glitches and voltage pulses against a LiteX-generated system-on-chip.
+    skills: [FPGA development, ChipWhisperer, Fault injection, Python, C, Assembly]
+
+education:
+  - title: Master's degree, Cybersecurity of Embedded Systems (CSSE)
+    org: Université Bretagne Sud
+    place: Lorient, France
+    period: 2021 – 2023
+    text: >-
+      Hardware and software security of embedded systems: physical attacks, cryptographic
+      implementations, security modules, exploit development, reverse engineering, secure
+      Linux and IoT networks.
+
+  - title: Bachelor's degree, Digital Systems & Industrial Computing (SNEII)
+    org: Université Bretagne Sud
+    place: Lorient, France
+    period: 2020 – 2021
+    text: >-
+      Electronics, computer architecture, microcontrollers, signal processing for
+      communication systems, C, Python and Bash.
+
+coursework:
+  - title: SERPENT block cipher on FPGA
+    period: 2022 · 40 h
+    text: >-
+      Implemented the SERPENT block cipher in VHDL with its test benches and debugged it on
+      a Xilinx ZedBoard.
+    skills: [VHDL, FPGA, Cryptography, Test benches]
+
+  - title: Trivium stream cipher on FPGA
+    period: 2021 · 40 h
+    text: >-
+      Implemented the Trivium stream cipher in VHDL on a Xilinx Basys 3 board.
+    skills: [VHDL, FPGA, Cryptography]
+
+  - title: Hardware password manager
+    period: 2021 · 10 weeks
+    text: >-
+      A physical password vault on an STM32 board with a Trusted Execution Environment,
+      unlocked by fingerprint and PIN pad, keeping stored passwords confidential and
+      authenticated.
+    skills: [STM32, C, Python, TEE, Fingerprint sensor]
+
